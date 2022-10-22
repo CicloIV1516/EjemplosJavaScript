@@ -1,0 +1,23 @@
+{
+  "name": "ejemplosjavascript",
+  "version": "1.0.0",
+  "description": "Listado de ejemplos de clase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CicloIV1516/EjemplosJavaScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CicloIV1516/EjemplosJavaScript/issues"
+  },
+  "homepage": "https://github.com/CicloIV1516/EjemplosJavaScript#readme",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "javascript": "^1.0.0"
+  }
+}

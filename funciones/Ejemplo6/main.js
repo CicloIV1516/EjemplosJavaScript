@@ -14,7 +14,7 @@ let info = function(){
 //llamo la función
 document.write(info());
 
-//función flecha: Relacionan funciones dentro de funciones, es el uso más adecuado
+//función flecha: Relacionan funciones dentro de funciones, es el uso más adecuado Arrow
 let info2 = (n)=>{
     return "Hola " + n + "</br>";
 }
@@ -24,6 +24,8 @@ document.write(info2("Luis"));
 let numero ="14";
 //error de funcionamiento
 let suma = numero + 5;
+document.write(suma);
 //solución
 suma = parseInt(numero) + 5;
 document.write(suma);
+
