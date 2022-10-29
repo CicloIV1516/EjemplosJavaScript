@@ -5,6 +5,11 @@
     flex-direction: column;
     background-color:white;
 }
+.objTitulos{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
 .objFormulario{
     display: flex;
     gap: 5px;
