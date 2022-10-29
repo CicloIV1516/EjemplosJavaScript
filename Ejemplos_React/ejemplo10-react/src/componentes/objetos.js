@@ -1,6 +1,6 @@
 import {useState} from "react"
 
-export default function Objetos({item, actualizarDatos}){
+export default function Objetos({item, actualizarDatos, onEliminar}){
     //creamos los estados adicionales
 
     const [isEditar, setIsEditar] = useState(false);
@@ -24,7 +24,7 @@ export default function Objetos({item, actualizarDatos}){
 
 
         return(
-            <form className="objActualizarForm" onSubmit={handleSubmit}>
+            <form className='objActualizarForm' onSubmit={handleSubmit}>
                 <input
                 type="text"
                 className='objInput'
@@ -43,18 +43,14 @@ export default function Objetos({item, actualizarDatos}){
         return (
             <div className='ObjetosInfo'>
                 <span className='objEtiqueta'>{item.etiqueta}</span>
-                <button className='boton' onClick={()=> setIsEditar(true)}>Editar</button>
-                
+                <button className='botonActualizar' onClick={()=> setIsEditar(true)}>Editar</button>
+                <button className='botonEliminar' onClick={()=> onEliminar(item.id)}>Eliminar</button>
             </div>
         );
     };
 
-
-
-
-
     return(
-        <div className="objObjetos">
+        <div className='objObjetos'>
         {isEditar ? <FormEditar/> : <ObjetosIndividuales/>}   
         </div>    
     );

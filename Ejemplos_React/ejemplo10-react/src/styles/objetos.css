@@ -1,0 +1,74 @@
+.objContenedor{
+    width: 500px;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+}
+.objFormulario{
+    display: flex;
+    gap: 5px;
+}
+.objInput{
+    flex-grow: 1;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: solid 1px rgb(2, 7, 1);
+}
+.objBoton{
+    border: none;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+.cuerpoContenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    background-color: white;    
+}
+.ObjetosInfo{
+    padding: 10px;
+    background-color: white; 
+    display: flex;
+    align-items: center; 
+    gap: 5px;  
+}
+.objEtiqueta{
+    flex: 1;
+    font-size: 20px;
+}
+.botonActualizar{
+    border: none;
+    border-radius: 6px;
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    gap: 10px;
+}
+.botonEliminar{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(255, 0, 0);
+    padding: 10px 20px;
+}
+.objObjetos{
+    padding: 1px;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 6px;
+}
+.objActualizarForm{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.objBotonEditar{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(21, 255, 0);
+    padding: 10px 20px;
+}
