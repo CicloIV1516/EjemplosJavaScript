@@ -14,8 +14,7 @@ export default function ObjetosApp() {
         e.preventDefault();
         const newObjeto = {
             id: crypto.randomUUID(),
-            etiqueta: etiqueta
-           
+            etiqueta: etiqueta           
         };
         
 
@@ -23,8 +22,8 @@ export default function ObjetosApp() {
         copia.unshift(newObjeto);
         setCuerpo(copia);
         setEtiqueta('');
-        //console.log(copia);
-    }
+        console.log(copia);
+    };
    
 
     /*
@@ -37,6 +36,13 @@ export default function ObjetosApp() {
     function handleCambios(e){
         const value = e.target.value;
         setEtiqueta(value);
+    }
+
+    function handleActualizar(id, value){
+        const copia = [...cuerpo];
+        const item = copia.find(item => item.id === id);
+        item.etiqueta = value;
+        setCuerpo(copia);
     }
 
     return (
@@ -70,6 +76,7 @@ export default function ObjetosApp() {
                         <Objetos
                         key={item.id}
                         item={item}
+                        actualizarDatos={handleActualizar}
                         />
                     ))
                 }
