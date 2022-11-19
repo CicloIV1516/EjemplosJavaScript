@@ -54,8 +54,8 @@ const CompShowProducts = ()=>{
                                     <td>{product.precio}</td>
                                     <td>{product.stock}</td>
                                     <td>
-                                        <Link to={`/edit/${product.id}`} className='btn btn-info'><i class="fa-solid fa-pen-to-square"></i></Link>
-                                        <button onClick={()=>deleteProduct(product._id)} className='btn btn-danger'><i class="fa-solid fa-trash"></i></button>
+                                        <Link to={`/edit/${product._id}`} className='btn btn-info'><i className="fa-solid fa-pen-to-square"></i></Link>
+                                        <button onClick={()=>deleteProduct(product._id)} className='btn btn-danger'><i className="fa-solid fa-trash"></i></button>
                                     </td>
                                 </tr>
                             ))}
@@ -65,7 +65,7 @@ const CompShowProducts = ()=>{
                 <div className='col border rounded-3 my-0'>
                     <div className='col'>
                         <h3>Crear nuevo producto</h3>
-                        <Link to="/create" className='btn btn-primary mt-2 mb-4'><i class="fa-solid fa-plus"></i></Link>
+                        <Link to="/create" className='btn btn-primary mt-2 mb-4'><i className="fa-solid fa-plus"></i></Link>
                         <p>Haga clic en el botón para ingresar un nuevo producto,
                             luego ingrese los datos en la ventana que aparece a continuación.</p>
                     </div>
