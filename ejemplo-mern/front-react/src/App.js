@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import CompShowProducts from './Product/ShowProducts';
+import CompCreateProducts from './Product/CreateProduct';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='' element={<CompShowProducts/>}/>
+        <Route path='/create' element={<CompCreateProducts/>}/>
       </Routes>
       </BrowserRouter>
     </div>
