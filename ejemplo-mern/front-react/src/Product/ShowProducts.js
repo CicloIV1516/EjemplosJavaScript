@@ -1,9 +1,12 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
+import { u } from "../module/urlModule.js";
 
 //vamos a hacer referencia al END-Point que creamos en node
-const URI = 'http://localhost:3001/products/';
+const URI = u;
+
+
 
 //creamos la función para los componenetes que vamos
 //a implementa, tengamos en cuenta que TODO EL CÓDIGO
@@ -15,6 +18,8 @@ const CompShowProducts = ()=>{
     useEffect(()=>{
         getProducts();
     },[]);
+
+    const navigate = useNavigate();
 
     //creamos la función getProducts para que vaya al back
     const getProducts = async()=>{
@@ -71,6 +76,18 @@ const CompShowProducts = ()=>{
                     </div>
                 </div>
             </div>
+
+            <footer>
+                <div className='container'>
+                    <div className='row justify-content-center my-5'> {/* linea 36 para cambios paso 46 */}
+                        <div className='col border rounded-3 my-auto mx-auto'>
+                            <form className="form-control-lg" >
+                                <button type="submit" className="btn btn-outline-warning mx-3 p-3" onClick={(e)=>navigate('/')}><i className="fa-solid fa-igloo fa-xl"></i> Inicio</button>
+                            </form>
+                        </div>                
+                    </div>
+                </div>
+            </footer>
 
         </div>
     );

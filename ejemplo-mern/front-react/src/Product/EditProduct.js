@@ -1,8 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { u } from "../module/urlModule";
 
-const URI = 'http://localhost:3001/products/';
+const URI = u;
 
 //creamos el componente de edición
 const CompEditProducts = ()=>{

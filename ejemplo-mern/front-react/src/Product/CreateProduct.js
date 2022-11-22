@@ -1,8 +1,9 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { u } from "../module/urlModule.js";
 
-const URI = 'http://localhost:3001/products/';
+const URI = u;
 
 //creamos el componente para crear nuevos productos
 const CompCreateProducts = ()=>{
