@@ -1,5 +1,7 @@
 import mongoose from 'mongoose';
-const url = 'mongodb://localhost:27017/marketPlace';
+//const url = 'mongodb://localhost:27017/marketPlace';
+
+const url = 'mongodb+srv://luisfelipe2022:luisfelipe2022@cluster0.inznx5j.mongodb.net/marketPlace?retryWrites=true&w=majority'
 
 mongoose.connect(url);
 

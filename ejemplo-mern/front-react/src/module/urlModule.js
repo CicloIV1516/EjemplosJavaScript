@@ -1,2 +1,2 @@
-export const u = 'http://localhost:3001/products/';
-export const u2 = 'http://localhost:3001/cars/';
+export const u = 'https://tienda-ciclo.herokuapp.com/products/';
+export const u2 = 'https://tienda-ciclo.herokuapp.com/cars/';

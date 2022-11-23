@@ -22,7 +22,7 @@ const CompEditProducts = ()=>{
     const update = async (e)=>{
         e.preventDefault();
         await axios.put(URI+id, {nombre:nombre, descripcion:descripcion, precio:precio, stock:stock });
-        navigate('/');
+        navigate('/view');
     };
 
     //Aquí busco el producto con el id, esto se ejecuta antes del procedimiento de actualzar

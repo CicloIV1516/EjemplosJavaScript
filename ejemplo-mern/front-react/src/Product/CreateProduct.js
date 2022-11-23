@@ -19,7 +19,7 @@ const CompCreateProducts = ()=>{
     const nuevo = async (e)=>{
         e.preventDefault();
         await axios.post(URI, {nombre:nombre, descripcion:descripcion, precio:precio, stock:stock});
-        navigate('/');
+        navigate('/view');
     }
 
     return(
@@ -71,7 +71,7 @@ const CompCreateProducts = ()=>{
                     </div>
                 </div>
                 <div className="mt-4">
-                    <button className="btn btn-primary px-3 py-3" type="submit"><i class="fa-solid fa-cloud"></i>  Guardar</button>
+                    <button className="btn btn-primary px-3 py-3" type="submit"><i className="fa-solid fa-cloud"></i>  Guardar</button>
 
                 </div>
             </form>

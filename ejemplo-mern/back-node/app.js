@@ -8,7 +8,7 @@ const app = express();
 //const port = 3001;
 
 //microservicios
-app.set("port", 3001 || process.env.PORT)
+app.set("port", process.env.PORT || 3001);
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
